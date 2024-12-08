@@ -80,6 +80,33 @@
             background: #fff;
             color: #ff0055;
         }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ff0055;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -111,7 +138,11 @@
 <section id="contact">
     <div>
         <h2>Участники</h2>
-        <p>!!!</p>
+        <div class="card">
+            <img src="https://via.placeholder.com/100" alt="Фото">
+            <h2>Имя или заголовок</h2>
+            <p>Краткое описание, которое рассказывает о фотографии или о человеке.</p>
+        </div>
         <a href="mailto:info@slay.com" class="btn">Подать заявку</a>
     </div>
 </section>
