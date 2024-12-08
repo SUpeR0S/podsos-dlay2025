@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slay Style Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #000;
+            color: #fff;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+        }
+        header h1 {
+            font-size: 24px;
+            color: #fff;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+        nav a:hover {
+            color: #ff0055;
+        }
+        section {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+        section#home {
+            background: linear-gradient(135deg, #ff0055, #000);
+        }
+        section#about {
+            background: #111;
+        }
+        section#contact {
+            background: #222;
+        }
+        h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #ff0055;
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #fff;
+            color: #ff0055;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SlaySite</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="home">
+    <div>
+        <h2>Welcome to Slay</h2>
+        <p>Minimalist. Stylish. Powerful.</p>
+        <a href="#about" class="btn">Learn More</a>
+    </div>
+</section>
+
+<section id="about">
+    <div>
+        <h2>About Us</h2>
+        <p>We create modern and sleek designs that stand out from the crowd.</p>
+    </div>
+</section>
+
+<section id="contact">
+    <div>
+        <h2>Contact Us</h2>
+        <p>Got questions? We'd love to hear from you!</p>
+        <a href="mailto:info@slay.com" class="btn">Email Us</a>
+    </div>
+</section>
+
+</body>
+</html>
